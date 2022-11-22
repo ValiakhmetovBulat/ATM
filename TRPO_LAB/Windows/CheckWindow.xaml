@@ -16,6 +16,8 @@
             <TextBlock x:Name="enteredSum"/>
             <TextBlock Text="Сдача: " FontWeight="Bold"/>
             <TextBlock x:Name="exchange"/>
+            <TextBlock Text="Номер телефона: " FontWeight="Bold"/>
+            <TextBlock x:Name="phone"/>
             <TextBlock Text="Оплаченные услуги:" FontWeight="Bold"/>
             <TextBlock TextWrapping="Wrap" x:Name="paidServices"/>
         </StackPanel>

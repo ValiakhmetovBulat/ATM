@@ -51,7 +51,7 @@ namespace TRPO_LAB.Pages
                     {
                         if (item.number == AtmManager.currUser.number)
                         {
-                            CheckWindow cw = new CheckWindow(_sumToPay, _enteredSum, _change, AtmManager.choosenServices);
+                            CheckWindow cw = new CheckWindow(_sumToPay, _enteredSum, _change, AtmManager.choosenServices, phone.Text);
                             cw.Show();
 
                             if (AtmManager.choosenServices[0])

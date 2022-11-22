@@ -20,11 +20,12 @@ namespace TRPO_LAB.Windows
     /// </summary>
     public partial class CheckWindow : Window
     {
-        public CheckWindow(int _sumToPay, int _enteredSum, int _exchange, List<bool> _paidServices)
+        public CheckWindow(int _sumToPay, int _enteredSum, int _exchange, List<bool> _paidServices, string _phone)
         {
             InitializeComponent();
             checkNum.Text = ((new Random()).Next(100000, 999999)).ToString();
 
+            phone.Text = _phone;
             sumToPay.Text = _sumToPay.ToString();
             enteredSum.Text = _enteredSum.ToString();
             exchange.Text = _exchange.ToString();
