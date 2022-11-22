@@ -1,0 +1,23 @@
+﻿<Window x:Class="TRPO_LAB.Windows.CheckWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TRPO_LAB.Windows"
+        mc:Ignorable="d"
+        Title="CheckWindow" Height="500" Width="200" MinHeight="500" MinWidth="200">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" >
+            <TextBlock Text="Чек об оплате №" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="checkNum" HorizontalAlignment="Center"/>
+            <TextBlock Text="Сумма к оплате: " FontWeight="Bold" Margin="0 20 0 0"/>
+            <TextBlock x:Name="sumToPay"/>
+            <TextBlock Text="Внесено: " FontWeight="Bold"/>
+            <TextBlock x:Name="enteredSum"/>
+            <TextBlock Text="Сдача: " FontWeight="Bold"/>
+            <TextBlock x:Name="exchange"/>
+            <TextBlock Text="Оплаченные услуги:" FontWeight="Bold"/>
+            <TextBlock TextWrapping="Wrap" x:Name="paidServices"/>
+        </StackPanel>
+    </Grid>
+</Window>

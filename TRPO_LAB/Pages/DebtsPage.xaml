@@ -1,0 +1,45 @@
+﻿<Page x:Class="TRPO_LAB.Pages.DebtsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TRPO_LAB.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DebtsPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Margin="30 10 30 10" Background="GreenYellow" x:Name="dpPhone">
+            <StackPanel VerticalAlignment="Center" Margin="30 0 0 0">
+                <TextBlock Text="Услуга: Стационарный телефон"/>
+                <TextBlock Text="Сумма:" Margin="0 10 0 0" x:Name="tbPhoneSum"/>
+            </StackPanel>
+            <CheckBox x:Name="payPhone" Content="Оплатить" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 30 0"/>
+        </DockPanel>
+
+        <DockPanel Margin="30 10 30 10" Background="GreenYellow" Grid.Row="1" x:Name="dpFacture">
+            <StackPanel VerticalAlignment="Center" Margin="30 0 0 0">
+                <TextBlock Text="Услуга: Счет-фактура"/>
+                <TextBlock Text="Сумма:" Margin="0 10 0 0" x:Name="tbFactureSum"/>
+            </StackPanel>
+            <CheckBox x:Name="payFacture" Content="Оплатить" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 30 0"/>
+        </DockPanel>
+
+        <DockPanel Margin="30 10 30 10" Background="GreenYellow" Grid.Row="2" x:Name="dpGas">
+            <StackPanel VerticalAlignment="Center" Margin="30 0 0 0">
+                <TextBlock Text="Услуга: Газ" />
+                <TextBlock Text="Сумма:" Margin="0 10 0 0" x:Name="tbGasSum"/>
+            </StackPanel>
+            <CheckBox x:Name="payGas" Content="Оплатить" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 30 0"/>
+        </DockPanel>
+
+        <Button Content="Далее" Grid.Row="3" Width="150" Margin="5" x:Name="btnNext" Click="btnNext_Click"></Button>
+    </Grid>
+</Page>

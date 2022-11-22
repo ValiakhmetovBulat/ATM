@@ -1,0 +1,21 @@
+﻿<Page x:Class="TRPO_LAB.Pages.PhonePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TRPO_LAB.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PhonePage" Background="White">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock FontSize="30" Text="Ваша сдача: "></TextBlock>
+            <TextBlock FontSize="30" x:Name="tbChange"/>
+            <TextBlock Text="Введите номер телефона, на который будет отправлена сдача:" TextWrapping="Wrap" Margin="0 20 0 0"/>
+            <TextBox x:Name="tbPhone" Margin="0 10 0 0" Height="50" Width="450" IsReadOnly="True"/>
+            <Button x:Name="btnSendChange" Content="Отправить сдачу" Width="auto" Margin="0 40 0 0" Click="btnSendChange_Click"></Button>
+        </StackPanel>
+        
+    </Grid>
+</Page>
